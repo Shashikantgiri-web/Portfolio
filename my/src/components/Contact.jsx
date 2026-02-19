@@ -29,7 +29,8 @@ const Contact = () => {
                             </div>
                             <div className="text-left">
                                 <div className="text-sm text-slate-500">Email Me</div>
-                                <div className="font-semibold text-slate-200">shashikntshankar707@gmail.com</div>
+                                <div className="font-semibold text-slate-200 hidden sm:block ">shashikntshankar707@gmail.com</div>
+                                <div className="font-semibold text-slate-200 flex sm:hidden">shashikntshankar707 @gmail.com</div>
                             </div>
                         </a>
 
