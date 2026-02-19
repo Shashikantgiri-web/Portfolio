@@ -41,11 +41,25 @@ const Projects = () => {
             live: "https://twitter-x-com.vercel.app/"
         },
         {
+            title: "Bootstrap Portfolio",
+            description: "A professional portfolio built using Bootstrap and PHP.",
+            tech: ["Bootstrap", "PHP", "HTML/CSS"],
+            github: "https://github.com/Shashikantgiri-web/Bootstrap_portfolio",
+            live: "https://bootstrap-portfolio.infinityfreeapp.com/?i=1"
+        },
+        {
             title: "Bookoe",
             description: "Book library website with categories and proper API integration.",
             tech: ["React", "Custom API", "CSS"],
             github: "https://github.com/Shashikantgiri-web/Bookoe",
             live: "https://bookoe.netlify.app/"
+        },
+        {
+            title: "Tiktok (Tic-Tac-Toe) Game",
+            description: "Interactive gaming project featuring a modern take on the classic Tic-Tac-Toe.",
+            tech: ["Javascript", "CSS", "Vite"],
+            github: "https://github.com/uselogin93-ctrl/Games-testing",
+            live: "https://levelup-zone.vercel.app/"
         }
     ];
 
@@ -69,7 +83,6 @@ const Projects = () => {
                             <div className="p-8">
                                 <div className="flex justify-between items-start mb-6">
                                     <div className="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-indigo-400">
-                                        {/* Folder Icon Placeholder */}
                                         <span className="text-2xl">📁</span>
                                     </div>
                                     <div className="flex space-x-4 text-slate-400">

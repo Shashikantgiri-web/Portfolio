@@ -14,11 +14,15 @@ const Skills = () => {
         },
         {
             category: "Tools & OS",
-            skills: ["VS Code", "Github", "Cursor", "Windows", "Figma", "Excel", "PowerBI (Learning)"]
+            skills: ["VS Code", "Github", "Cursor", "Windows", "Figma", "Anti Gravity"]
+        },
+        {
+            category: "Data Analysis",
+            skills: ["Excel", "PowerBI (Learning)"]
         },
         {
             category: "Others",
-            skills: ["C", "C++", "DSA", "Vercel", "Netlify", "Cloudflare"]
+            skills: ["C", "C++", "DSA", "Vercel", "Netlify", "Cloudflare", "InfinityFree"]
         }
     ];
 
@@ -29,7 +33,7 @@ const Skills = () => {
                     <span className="text-indigo-400 mr-4">02.</span> Technical Skills
                 </h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
                     {skillsData.map((item, idx) => (
                         <motion.div
                             key={item.category}
@@ -37,17 +41,17 @@ const Skills = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: idx * 0.1 }}
                             viewport={{ once: true }}
-                            className="p-6 bg-slate-900/50 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-colors"
+                            className="p-6 bg-slate-900/50 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-colors group"
                         >
-                            <h3 className="text-lg font-semibold text-white mb-6 flex items-center">
-                                <div className="w-2 h-2 rounded-full bg-indigo-500 mr-3" />
+                            <h3 className="text-lg font-semibold text-white mb-6 flex items-center group-hover:text-indigo-400 transition-colors">
+                                <div className="w-2 h-2 rounded-full bg-indigo-500 mr-3 shadow-[0_0_8px_rgba(99,102,241,0.6)]" />
                                 {item.category}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {item.skills.map((skill) => (
                                     <span
                                         key={skill}
-                                        className="px-3 py-1 bg-slate-800 text-slate-300 rounded-md text-sm border border-slate-700"
+                                        className="px-3 py-1 bg-slate-800/50 text-slate-300 rounded-md text-sm border border-slate-700 hover:border-indigo-500/30 transition-colors"
                                     >
                                         {skill}
                                     </span>
