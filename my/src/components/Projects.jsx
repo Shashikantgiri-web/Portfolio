@@ -41,11 +41,11 @@ const Projects = () => {
             live: "https://twitter-x-com.vercel.app/"
         },
         {
-            title: "Bootstrap Portfolio",
-            description: "A professional portfolio built using Bootstrap and PHP.",
-            tech: ["Bootstrap", "PHP", "HTML/CSS"],
-            github: "https://github.com/Shashikantgiri-web/Bootstrap_portfolio",
-            live: "https://bootstrap-portfolio.infinityfreeapp.com/?i=1"
+            title: "Bitlinket - URL Shortener",
+            description: "A website make your url shortener and reusable links with server-side API handling.",
+            tech: ["Next.js", "MongoDB", "Tailwind"],
+            github: "https://github.com/Shashikantgiri-web/Url-Shortener",
+            live: "https://url-shortener-seven-orpin.vercel.app"
         },
         {
             title: "Bookoe",
