@@ -15,12 +15,10 @@ A modern and responsive personal portfolio website built with Next.js, React, an
 * Frontend: Next.js, React, Framer Motion
 * Dependencies: `next`, `react`, `framer-motion`, `lucide-react`
 * Build Tools: `next`, `npm`
-* Database: None
-* AI Tools: None
 
 ## 📦 Installation
 To get started with this project, follow these steps:
-1. Clone the repository: `git clone https://github.com/your-username/your-repo-name.git`
+1. Clone the repository: `[git clone https://github.com/your-username/your-repo-name.git](https://github.com/Shashikantgiri-web/Portfolio)`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
