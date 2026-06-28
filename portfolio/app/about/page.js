@@ -1,38 +1,41 @@
-import apiData from '@/public/api.json';
+﻿import apiData from '@/public/api.json';
+import { createMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'About | Shashikant Giri',
-  description: 'Learn about Shashikant Giri — Full Stack Developer & Data Analyst from Navi Mumbai. B.Sc. IT graduate passionate about data-driven web applications.',
-};
+export const metadata = createMetadata({
+  title: 'About Shashikant Giri | Web Developer & Data Analyst',
+  description:
+    'Learn about Shashikant Giri, a Data-Driven Full Stack Developer and Data Analyst from Navi Mumbai, Maharashtra, India with skills in Next.js, React, Power BI, Python, SQL, and MongoDB.',
+  path: '/about',
+});
 
 const skillCategories = [
   {
     label: 'Frontend',
-    icon: '🎨',
+    icon: 'ðŸŽ¨',
     color: 'var(--accent)',
     items: ['HTML', 'CSS', 'JavaScript', 'React Js', 'Next Js', 'Vite', 'Tailwind CSS', 'Bootstrap'],
   },
   {
     label: 'Backend',
-    icon: '⚙️',
+    icon: 'âš™ï¸',
     color: 'var(--accent-warm)',
     items: ['Node JS', 'Express Js', 'REST API', 'Nodemon'],
   },
   {
     label: 'Database',
-    icon: '🗄️',
+    icon: 'ðŸ—„ï¸',
     color: '#4ade80',
     items: ['MongoDB', 'MySQL', 'MongoDB Compass'],
   },
   {
     label: 'Data & Analytics',
-    icon: '📊',
+    icon: 'ðŸ“Š',
     color: '#818cf8',
     items: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Power BI', 'Excel', 'SQL'],
   },
   {
     label: 'Tools & Platforms',
-    icon: '🛠️',
+    icon: 'ðŸ› ï¸',
     color: '#fb923c',
     items: ['VS Code', 'Figma', 'Postman', 'GitHub', 'Vercel', 'Netlify', 'Cursor'],
   },
@@ -57,7 +60,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
             {/* Left */}
             <div>
-              <div className="section-label">👋 About Me</div>
+              <div className="section-label">ðŸ‘‹ About Me</div>
               <h1 style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 700, letterSpacing: '-0.04em', marginBottom: '1.5rem', lineHeight: 1.05 }}>
                 {data.name}
               </h1>
@@ -69,15 +72,15 @@ export default function AboutPage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href={`mailto:${data.Personl_detail.Email.WEbDev_email}`} className="btn-primary">
-                  Email Me →
+                  Email Me â†’
                 </a>
                 <a href={`https://${data.Linkedli}`} target="_blank" rel="noopener noreferrer" className="btn-ghost">
-                  LinkedIn ↗
+                  LinkedIn â†—
                 </a>
               </div>
             </div>
 
-            {/* Right — Info card */}
+            {/* Right â€” Info card */}
             <div style={{
               background: 'var(--surface)',
               border: '1px solid var(--border)',
@@ -85,13 +88,13 @@ export default function AboutPage() {
               padding: '2rem',
             }}>
               {[
-                { label: 'Location', value: data.Personl_detail.Loction, icon: '📍' },
-                { label: 'Phone', value: data.Personl_detail.Contack_no, icon: '📞' },
-                { label: 'Email (Web)', value: data.Personl_detail.Email.WEbDev_email, icon: '📧' },
-                { label: 'Email (Data)', value: data.Personl_detail.Email.dataAnalysis_email, icon: '📊' },
-                { label: 'GitHub (Web)', value: 'Shashikantgiri-web', icon: '🐙', href: data.Github.WebDev_Github_Link },
-                { label: 'GitHub (Data)', value: 'shashikant-ds636', icon: '🔬', href: data.Github.dataAnalysis_Github_Link },
-                { label: 'LinkedIn', value: 'shashikant-giri', icon: '💼', href: `https://${data.Linkedli}` },
+                { label: 'Location', value: data.Personl_detail.Loction, icon: 'ðŸ“' },
+                { label: 'Phone', value: data.Personl_detail.Contack_no, icon: 'ðŸ“ž' },
+                { label: 'Email (Web)', value: data.Personl_detail.Email.WEbDev_email, icon: 'ðŸ“§' },
+                { label: 'Email (Data)', value: data.Personl_detail.Email.dataAnalysis_email, icon: 'ðŸ“Š' },
+                { label: 'GitHub (Web)', value: 'Shashikantgiri-web', icon: 'ðŸ™', href: data.Github.WebDev_Github_Link },
+                { label: 'GitHub (Data)', value: 'shashikant-ds636', icon: 'ðŸ”¬', href: data.Github.dataAnalysis_Github_Link },
+                { label: 'LinkedIn', value: 'shashikant-giri', icon: 'ðŸ’¼', href: `https://${data.Linkedli}` },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -111,7 +114,7 @@ export default function AboutPage() {
                     {item.href ? (
                       <a href={item.href} target="_blank" rel="noopener noreferrer"
                         style={{ color: 'var(--accent)', fontSize: '0.875rem', fontWeight: 500, wordBreak: 'break-all' }}>
-                        {item.value} ↗
+                        {item.value} â†—
                       </a>
                     ) : (
                       <span style={{ color: 'var(--text-primary)', fontSize: '0.875rem', wordBreak: 'break-all' }}>{item.value}</span>
@@ -130,8 +133,8 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { icon: '🎯', label: 'Mission', title: 'My Mission', content: data.Mission, color: 'var(--accent)' },
-              { icon: '🚀', label: 'Career Objective', title: 'Career Objective', content: data.Career_Objective, color: 'var(--accent-warm)' },
+              { icon: 'ðŸŽ¯', label: 'Mission', title: 'My Mission', content: data.Mission, color: 'var(--accent)' },
+              { icon: 'ðŸš€', label: 'Career Objective', title: 'Career Objective', content: data.Career_Objective, color: 'var(--accent-warm)' },
             ].map((item) => (
               <div
                 key={item.label}
@@ -171,7 +174,7 @@ export default function AboutPage() {
       {/* Technical Skills */}
       <section className="section-wrapper" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
         <div className="container-custom">
-          <div className="section-label">⚡ Skills</div>
+          <div className="section-label">âš¡ Skills</div>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 700, letterSpacing: '-0.03em', marginBottom: '3rem' }}>
             Technical Expertise
           </h2>
@@ -228,7 +231,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             {/* Education */}
             <div>
-              <div className="section-label">🎓 Education</div>
+              <div className="section-label">ðŸŽ“ Education</div>
               <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 700, letterSpacing: '-0.03em', marginBottom: '2.5rem' }}>
                 Academic Background
               </h2>
@@ -259,7 +262,7 @@ export default function AboutPage() {
 
             {/* Certifications */}
             <div>
-              <div className="section-label">🏆 Certifications</div>
+              <div className="section-label">ðŸ† Certifications</div>
               <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 700, letterSpacing: '-0.03em', marginBottom: '2.5rem' }}>
                 Professional Credentials
               </h2>
@@ -276,7 +279,7 @@ export default function AboutPage() {
                       border: `1px solid ${cert.currently ? 'rgba(212,165,116,0.2)' : 'rgba(232,85,58,0.2)'}`,
                       display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem',
                     }}>
-                      {cert.currently ? '🔄' : '🏆'}
+                      {cert.currently ? 'ðŸ”„' : 'ðŸ†'}
                     </div>
                     <div>
                       <h4 style={{ fontFamily: 'Clash Grotesk', fontSize: '0.95rem', fontWeight: 700, marginBottom: '0.4rem' }}>{cert.name}</h4>
@@ -291,7 +294,7 @@ export default function AboutPage() {
                           color: cert.currently ? 'var(--accent-warm)' : '#4ade80',
                           border: `1px solid ${cert.currently ? 'rgba(212,165,116,0.2)' : 'rgba(74,222,128,0.2)'}`,
                         }}>
-                          {cert.currently ? '● Pursuing' : '✓ ' + cert.status}
+                          {cert.currently ? 'â— Pursuing' : 'âœ“ ' + cert.status}
                         </span>
                       </div>
                     </div>
@@ -306,3 +309,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

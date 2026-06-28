@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { gsap } from 'gsap';
@@ -70,7 +70,7 @@ export default function CardSwap() {
   const activeProject = projects[activeIndex];
 
   // GSAP 3D stack position calculator
-  const updateStackLayout = (animatingCardIndex = -1, isNextDirection = true) => {
+  const updateStackLayout = useCallback((animatingCardIndex = -1, isNextDirection = true) => {
     projects.forEach((_, index) => {
       const card = cardsRef.current[index];
       if (!card) return;
@@ -113,10 +113,10 @@ export default function CardSwap() {
         });
       }
     });
-  };
+  }, [activeIndex]);
 
   // Perform card swap animation
-  const handleSwap = (nextIndex) => {
+  const handleSwap = useCallback((nextIndex) => {
     if (isSwapping || nextIndex === activeIndex) return;
     setIsSwapping(true);
 
@@ -211,36 +211,36 @@ export default function CardSwap() {
         }
       });
     }, 200);
-  };
+  }, [activeIndex, isSwapping]);
 
-  const nextCard = () => {
+  const nextCard = useCallback(() => {
     const nextIdx = (activeIndex + 1) % projects.length;
     handleSwap(nextIdx);
-  };
+  }, [activeIndex, handleSwap]);
 
-  const prevCard = () => {
+  const prevCard = useCallback(() => {
     const prevIdx = (activeIndex - 1 + projects.length) % projects.length;
     handleSwap(prevIdx);
-  };
+  }, [activeIndex, handleSwap]);
 
   // Start auto-swap timer
-  const startTimer = () => {
+  const startTimer = useCallback(() => {
     if (autoSwapRef.current) clearInterval(autoSwapRef.current);
     autoSwapRef.current = setInterval(nextCard, 5000); // swap every 5s
-  };
+  }, [nextCard]);
 
-  const stopTimer = () => {
+  const stopTimer = useCallback(() => {
     if (autoSwapRef.current) {
       clearInterval(autoSwapRef.current);
       autoSwapRef.current = null;
     }
-  };
+  }, []);
 
   useEffect(() => {
     updateStackLayout();
     startTimer();
     return () => stopTimer();
-  }, [activeIndex]);
+  }, [updateStackLayout, startTimer, stopTimer]);
 
   const handleCardClick = (index, event) => {
     if (index === activeIndex) {

@@ -1,6 +1,7 @@
 import apiData from '@/public/api.json';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { breadcrumbJsonLd, createMetadata } from '@/lib/seo';
 
 function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -14,10 +15,12 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const project = apiData.dataAnalysis_projects.find((p) => slugify(p.name) === slug);
   if (!project) return {};
-  return {
+  return createMetadata({
     title: `${project.name} | Analytics | Shashikant Giri`,
-    description: project.description,
-  };
+    description: `${project.description} View this Power BI and data analyst portfolio project by Shashikant Giri.`,
+    path: `/analytics/${slug}`,
+    keywords: [project.name, 'Shashikant Data Analyst', 'Power BI Portfolio', 'Data Analyst Portfolio India'],
+  });
 }
 
 const kpisByProject = {
@@ -49,9 +52,18 @@ export default async function AnalyticsProjectPage({ params }) {
   const currentIndex = allProjects.findIndex((p) => slugify(p.name) === slug);
   const prev = allProjects[currentIndex - 1];
   const next = allProjects[currentIndex + 1];
+  const breadcrumbSchema = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Data Analytics Projects', path: '/analytics' },
+    { name: project.name, path: `/analytics/${slug}` },
+  ]);
 
   return (
     <div style={{ paddingTop: '64px' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section style={{
         padding: '5rem 0 4rem',

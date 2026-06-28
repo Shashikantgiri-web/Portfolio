@@ -5,9 +5,11 @@ import { usePathname } from 'next/navigation';
 
 export default function HyperSpeedLoader() {
   const pathname = usePathname();
-  const [progress, setProgress] = useState(0);
-  const [visible, setVisible] = useState(false);
-  const [mode, setMode] = useState('idle'); // 'initial' | 'transition' | 'idle'
+  const shouldRunInitialLoader =
+    typeof window !== 'undefined' && !sessionStorage.getItem('hasLoadedPortfolio');
+  const [progress, setProgress] = useState(shouldRunInitialLoader ? 0 : 100);
+  const [visible, setVisible] = useState(shouldRunInitialLoader);
+  const [mode, setMode] = useState(shouldRunInitialLoader ? 'initial' : 'idle'); // 'initial' | 'transition' | 'idle'
   const prevPathnameRef = useRef(pathname);
 
   // Speed lines state
@@ -40,14 +42,7 @@ export default function HyperSpeedLoader() {
 
   // Handle initial visit loader and page transitions
   useEffect(() => {
-    const isFirstVisit = !sessionStorage.getItem('hasLoadedPortfolio');
-
-    if (isFirstVisit) {
-      // Run full loader on first visit
-      setMode('initial');
-      setVisible(true);
-      setProgress(0);
-
+    if (shouldRunInitialLoader) {
       let currentProgress = 0;
       const duration = 1800; // 1.8 seconds
       const stepTime = 20;
@@ -72,12 +67,8 @@ export default function HyperSpeedLoader() {
       }, stepTime);
 
       return () => clearInterval(timer);
-    } else {
-      // Not first visit, keep hidden initially
-      setMode('idle');
-      setVisible(false);
     }
-  }, []);
+  }, [shouldRunInitialLoader]);
 
   // Listen to path changes for page transition loader
   useEffect(() => {
@@ -87,9 +78,11 @@ export default function HyperSpeedLoader() {
 
       // Only run transition if the initial loader has finished
       if (sessionStorage.getItem('hasLoadedPortfolio') === 'true') {
-        setMode('transition');
-        setVisible(true);
-        setProgress(100);
+        requestAnimationFrame(() => {
+          setMode('transition');
+          setVisible(true);
+          setProgress(100);
+        });
 
         // Run transition speed lines for 700ms, then fade out
         const timer = setTimeout(() => {

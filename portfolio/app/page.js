@@ -1,14 +1,17 @@
-import apiData from '@/public/api.json';
+﻿import apiData from '@/public/api.json';
 import HeroSection from '@/components/HeroSection';
 import SkillsMarquee from '@/components/SkillsMarquee';
 import FeaturedProjects from '@/components/FeaturedProjects';
 import CardSwap from '@/components/CardSwap';
 import ContactCTA from '@/components/ContactCTA';
+import { createMetadata } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = createMetadata({
   title: 'Shashikant Giri | Data-Driven Full Stack Developer',
-  description: 'Portfolio of Shashikant Giri — Full Stack Developer & Data Analyst. Building scalable web applications and Power BI dashboards.',
-};
+  description:
+    'Shashikant Giri is a Data-Driven Full Stack Developer, Web Developer, and Data Analyst in Navi Mumbai, India. Explore Next.js, React, Power BI, and analytics portfolio projects.',
+  path: '/',
+});
 
 export default function HomePage() {
   const data = apiData;
@@ -75,3 +78,4 @@ export default function HomePage() {
     </>
   );
 }
+

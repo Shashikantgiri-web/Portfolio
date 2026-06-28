@@ -1,14 +1,18 @@
-import apiData from '@/public/api.json';
+﻿import apiData from '@/public/api.json';
 import ProjectCard from '@/components/ProjectCard';
+import { createMetadata } from '@/lib/seo';
 
 function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-export const metadata = {
+export const metadata = createMetadata({
   title: 'Web Development Projects | Shashikant Giri',
-  description: 'Explore full-stack web development projects built with Next.js, React, MongoDB and more by Shashikant Giri.',
-};
+  description:
+    'Explore Shashikant Giri web developer portfolio projects built with Next.js, React, Node.js, MongoDB, Tailwind CSS, REST APIs, Vercel, and Netlify.',
+  path: '/web',
+  keywords: ['Shashikant Web Developer', 'React Developer Portfolio', 'Next.js Developer India'],
+});
 
 export default function WebPage() {
   const projects = apiData.webDev_projects;
@@ -50,3 +54,5 @@ export default function WebPage() {
     </div>
   );
 }
+
+

@@ -1,6 +1,7 @@
 import apiData from '@/public/api.json';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { breadcrumbJsonLd, createMetadata } from '@/lib/seo';
 
 function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -14,11 +15,12 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const project = apiData.webDev_projects.find((p) => slugify(p.name) === slug);
   if (!project) return {};
-  return {
+  return createMetadata({
     title: `${project.name} | Web Project | Shashikant Giri`,
-    description: project.description,
-    openGraph: { title: project.name, description: project.description },
-  };
+    description: `${project.description} View this Next.js and React developer portfolio project by Shashikant Giri.`,
+    path: `/web/${slug}`,
+    keywords: [project.name, 'Shashikant Web Developer', 'React Developer Portfolio'],
+  });
 }
 
 export default async function WebProjectPage({ params }) {
@@ -31,9 +33,18 @@ export default async function WebProjectPage({ params }) {
   const currentIndex = allProjects.findIndex((p) => slugify(p.name) === slug);
   const prev = allProjects[currentIndex - 1];
   const next = allProjects[currentIndex + 1];
+  const breadcrumbSchema = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Web Development Projects', path: '/web' },
+    { name: project.name, path: `/web/${slug}` },
+  ]);
 
   return (
     <div style={{ paddingTop: '64px' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Banner */}
       <section
         style={{

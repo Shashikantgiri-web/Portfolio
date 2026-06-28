@@ -1,14 +1,18 @@
-import apiData from '@/public/api.json';
+﻿import apiData from '@/public/api.json';
 import ProjectCard from '@/components/ProjectCard';
+import { createMetadata } from '@/lib/seo';
 
 function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-export const metadata = {
-  title: 'Data Analytics Projects | Shashikant Giri',
-  description: 'Interactive Power BI dashboards and data analytics projects by Shashikant Giri.',
-};
+export const metadata = createMetadata({
+  title: 'Data Analytics & Power BI Projects | Shashikant Giri',
+  description:
+    'Explore Shashikant Giri data analyst portfolio projects, Power BI dashboards, Excel analysis, business intelligence work, and data visualization case studies in India.',
+  path: '/analytics',
+  keywords: ['Shashikant Data Analyst', 'Power BI Portfolio', 'Data Analyst Portfolio India'],
+});
 
 const kpiData = [
   { label: 'Dashboards Built', value: '3+' },
@@ -86,3 +90,5 @@ export default function AnalyticsPage() {
     </div>
   );
 }
+
+
