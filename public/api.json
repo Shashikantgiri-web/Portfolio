@@ -1,0 +1,310 @@
+{
+    "name": "Shashikant Giri",
+    "Professional_Title":"Web Developer & Data Analyst",
+    "HeadLine":"Web Developer & Data Analyst | Next.js, React.js, Node.js, MongoDB | Power BI, Python, SQL, Excel | Building Data-Driven Web Applications | Open to Opportunities",
+    "Personl_detail":{
+        "Email":{
+            "WEbDev_email":"shashikantshankar707@gmail.com",
+            "dataAnalysis_email":"shashikantds090@gmail.com"
+        },
+        "Contack_no":"+91 7873059283",
+        "Loction":"Navi Mumbai, Maharashtra, India"
+    },
+    "Linkedli":"www.linkedin.com/in/shashikant-giri-7a4549297",
+    "Github":{
+        "WebDev_Github_Link":"https://github.com/Shashikantgiri-web",
+        "dataAnalysis_Github_Link":"https://github.com/shashikant-ds636"
+    },
+    "portfolio":"https://shashikantgiri.netlify.app/",
+    "Info":"Recent B.Sc. Information Technology graduate with hands-on experience in Web Development and Data Analytics. Skilled in designing and developing responsive web applications using React.js, Next.js, Node.js, Express.js, and MongoDB, along with analyzing business data using Python, SQL, Excel, and Power BI. Experienced in building full-stack applications, interactive dashboards, and data-driven solutions that transform raw data into actionable insights. Passionate about combining modern web technologies and analytics to create scalable digital products that solve real-world business challenges. Currently seeking entry-level opportunities in Web Development, Data Analytics, Business Intelligence, and Data-Driven Software Development.",
+    "Mission":"To bridge the gap between technology and data by developing intelligent, scalable, and user-focused digital solutions. My goal is to leverage web development and data analytics to help organizations make informed decisions, improve efficiency, and deliver impactful user experiences.",
+    "Career_Objective":"To begin my professional career as a Web Developer or Data Analyst where I can apply my technical, analytical, and problem-solving skills to create innovative solutions while continuously growing as a technology professional.",
+    "Professional_Expertise":[
+        "Web Development",
+        "Full Stack Development",
+        "Data Analytics",
+        "Business Intelligence",
+        "Dashboard Development",
+        "Database Management"
+    ],
+    "basciSkills": {
+        "microsoftApp": [
+            "Word",
+            "Excel",
+            "PowerPoint"
+        ],
+        "pcUsed": [
+            "Windows"
+        ],
+        "programmingLanguage": [
+            "C Programs",
+            "C++"
+        ],
+        "tools": [
+            "VS Code",
+            "Github",
+            "Github desktop",
+            "Cursor",
+            "Anti gravity",
+            "Excel",
+            "Power Bi",
+            "Mongodb compass",
+            "MySQL Workbench"
+        ]
+    },
+    "WebDev_Skills": {
+        "uiDesign": [
+            "Figma"
+        ],
+        "frontEnd": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React Js",
+            "Next Js",
+            "Vite"            
+        ],
+        "cssLibrary": [
+            "Bootstrap",
+            "Tailwind CSS"
+        ],
+        "cssAnimations": [
+            "Frame Motion"
+        ],
+        "backend": [
+            "Node JS",
+            "Express Js",
+            "Nodemon",
+            "NPM"
+        ],
+        "apiTesting": [
+            "Postman"
+        ],
+        "database": [
+            "MongoDB"
+        ],
+        "deployCode": [
+            "Vercel",
+            "Netlify",
+            "Cloudflare",
+            "infinityfree"
+        ]
+    },
+    "webDev_projects": [
+        {
+            "name": "Getmychap---fund-raising-website",
+            "description":"Developed a crowdfunding web platform that enables users to support fundraising campaigns through a modern and responsive interface. Implemented campaign presentation, donation workflows, and mobile-friendly design using modern web technologies.",
+            "githubLink": "https://github.com/Shashikantgiri-web/Getmychap---fund-raising-website",
+            "liveLink": "https://getmychap-fund-raising-website.vercel.app/",
+            "techStack":[
+                "HTML",
+                "Next Js",
+                "Taillwind CSS",
+                "MongoDB",
+                "Next Auth",
+                "Rest API",
+                "QR based payment gateway",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "Link Tree",
+            "description":"Built a personal link aggregation platform that allows users to organize and share multiple social media and website links through a single customizable profile page.",
+            "githubLink": "https://github.com/Shashikantgiri-web/LinkTree-Clone",
+            "liveLink": "https://linktree-pink-eight.vercel.app/",
+            "techStack":[
+                "HTML",
+                "Next Js",
+                "Tailwind CSS",
+                "MongoDB",
+                "Rest API",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "URL Shortener",
+            "description":"Developed a URL shortening web application using Next.js and MongoDB, allowing users to generate and manage shortened links through a responsive user interface.",
+            "githubLink": "https://github.com/Shashikantgiri-web/Url-Shortener",
+            "liveLink": "https://url-shortener-seven-orpin.vercel.app/",
+            "techStack":[
+                "HTML",
+                "Next Js",
+                "Tailwind CSS",
+                "MongoDB",
+                "Rest API",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "TO-DO List",
+            "description":"Created a task management application that enables users to add, update, complete, and delete daily tasks. Designed an intuitive interface to improve productivity and task organization.",
+            "githubLink": "https://github.com/Shashikantgiri-web/Todo-App",
+            "liveLink": "https://todo-app-gamma-eight-67.vercel.app/",
+            "techStack":[
+                "HTML",
+                "React Js",
+                "Vite",
+                "Tailwind CSS",
+                "React Hook Form",
+                "MongoDB",
+                "Rest API",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "PassOP",
+            "description":"Developed a password management application that securely stores and manages user credentials. Implemented CRUD operations and a user-friendly interface for efficient password organization.",
+            "githubLink": "https://github.com/Shashikantgiri-web/PassOP",
+            "liveLink": "https://pass-op-phi-nine.vercel.app/",
+            "techStack":[
+                "HTML",
+                "React Js",
+                "React Router",
+                "Vite",
+                "Tailwind CSS",
+                "React Hook Form",
+                "Rest API",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "Twitter(X.com)",
+            "description":"Built a responsive Twitter (X) inspired social media interface featuring post feeds, profile layouts, and interactive UI components to replicate a modern social networking experience.",
+            "githubLink": "https://github.com/Shashikantgiri-web/Twitter-X.com-",
+            "liveLink": "https://twitter-x-com.vercel.app/",    
+            "techStack":[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "Bootstrap_portfolio",
+            "description":"Designed and developed a professional personal portfolio website using Bootstrap to showcase technical skills, projects, certifications, and contact information.",
+            "githubLink": "https://github.com/Shashikantgiri-web/Bootstrap_portfolio",
+            "liveLink": "https://bootstrap-portfolio.infinityfreeapp.com/?i=1",
+            "techStack":[
+                "HTML",
+                "Bootstrap CSS",
+                "JavaScript",
+                "Infinityfree"
+            ]
+        },
+        {
+            "name": "Bookoe",
+            "description":"Developed an online book discovery platform that allows users to explore and browse books through a clean and responsive user interface designed for an enhanced reading experience.",
+            "githubLink": "https://github.com/Shashikantgiri-web/Bookoe",
+            "liveLink": "https://bookoe.netlify.app/",
+            "techStack":[
+                "HTML",
+                "React Js",
+                "Vite",
+                "React Router",
+                "Tailwind CSS",
+                "Openbook API",
+                "Netlify"
+            ]
+        },
+        {
+            "name": "Tiktok game",
+            "description":"Contributed to the development of an interactive browser-based gaming experience featuring engaging gameplay mechanics, responsive design, and optimized user interaction.",
+            "githubLink": "https://github.com/uselogin93-ctrl/Games-testing",
+            "liveLink": "https://levelup-zone.vercel.app/",
+            "techStack":[
+                "HTML",
+                "React Js",
+                "Vite",
+                "React Router",
+                "Tailwind CSS",
+                "Openbook API",
+                "Netlify"
+            ]
+        }
+    ],
+    "Data_Analytics_Skills":[
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "MySQL",
+        "Microsoft Excel",
+        "Power BI",
+        "Data Cleaning",
+        "Data Visualization",
+        "Dashboard Development",
+        "Business Intelligence"
+    ],
+    "dataAnalysis_projects": [
+        {
+            "name": "Hospital performance dashboard",
+            "powerBi-link": "https://app.powerbi.com/reportEmbed?reportId=41a95a86-8f2e-4145-b1a2-b69dc4c382ca&autoAuth=true&ctid=f8bc6c81-1924-459e-b798-daa257ccd83f",
+            "description":"Designed and developed an interactive Power BI dashboard to analyze hospital performance metrics including patient satisfaction, average waiting time, readmission rates, and operational efficiency. Created KPI visualizations and actionable insights to support data-driven decision making.",
+            "TechStack":[
+                "Power BI",
+                "Excel",
+                "Data Cleaning",
+                "Data Visualization",
+                "Dashboard Development",
+                "Business Intelligence"
+            ]
+        },
+        {
+            "name": "University Student Performance Analytics",
+            "powerBi-link": "https://app.powerbi.com/reportEmbed?reportId=dc92c5db-54d0-4ca2-960f-85d78a57261e&autoAuth=true&ctid=f8bc6c81-1924-459e-b798-daa257ccd83f",
+            "description":"Built a Power BI dashboard to evaluate student academic performance by analyzing attendance, examination scores, and graduation trends. Developed interactive visualizations and KPI tracking to identify performance patterns and support educational decision-making.",
+            "TechStack":[
+                "Power BI",
+                "Excel",
+                "Data Cleaning",
+                "Data Visualization",
+                "Dashboard Development",
+                "Business Intelligence"
+            ]
+        },
+        {
+            "name": "Website Traffic Analysis ",
+            "description":"Performed website traffic analysis using Excel to examine visitor behavior, traffic sources, and engagement metrics. Applied data cleaning, analysis, and visualization techniques to answer business-focused analytical questions and generate actionable insights.",
+            "TechStack":[
+                "Excel",
+                "Data Cleaning",
+                "Data Visualization",
+                "Business Intelligence"
+            ]
+        }
+    ],
+    "EDUCATION": [
+        {
+            "name": "Terna Vidyalaya Jr.College",
+            "course": "12th",
+            "year": "2021 - 2023",
+            "status":"Passed"
+        },
+        {
+            "name": "Chhatrapati Shivaji Maharaj University",
+            "course": "Bsc.IT",
+            "year": "2023 - 2026",
+            "status":"Graduated"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Maharashtra state certificate in information Technology(MSCIT)",
+            "issuedBy": "MKCL",
+            "year": "September 2023",
+            "status":"Passed"
+        },
+        {
+            "name": "SSC Certificate Courses of Programming (C & C++)",
+            "issuedBy": "SSC",
+            "year": "May 2024",
+            "status":"Passed"
+        },
+        {
+            "name": "Data Science with AIML",
+            "issuedBy": "Coder Techologies",
+            "year": "Jan 2026",
+            "currently": "pursuing"
+        }
+    ]
+}
