@@ -16,38 +16,6 @@ export const metadata = {
   verification: {
     google: "btS2bvsqJOYXPFkyJ9AY6IpmS5egLUhVRIFrTHgK6wI",
   },
-  metadataBase: new URL("https://shashikantgiri.netlify.app"),
-
-  title: {
-    default: "Shashikant Giri | Data-Driven Full Stack Developer",
-    template: "%s | Shashikant Giri",
-  },
-
-  description:
-    "Shashikant Giri is a Data-Driven Full Stack Developer specializing in Next.js, React, JavaScript, Node.js, MongoDB, SQL, Python, Power BI, and Data Analytics. Explore projects, dashboards, and professional experience.",
-
-  keywords: [
-    "Shashikant Giri",
-    "Portfolio",
-    "Full Stack Developer",
-    "Next.js Developer",
-    "React Developer",
-    "JavaScript",
-    "Data Analyst",
-    "Power BI",
-    "Python",
-    "SQL",
-    "MongoDB",
-    "Frontend Developer",
-    "Web Developer",
-    "Business Intelligence"
-  ],
-
-  icons: {
-    icon: "/favicon.jpg",
-    shortcut: "/favicon.jpg",
-    apple: "/fovicon.jpg",
-  },
 };
 
 export default function RootLayout({ children }) {
@@ -60,10 +28,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en-IN">
-    <head>
-      <meta name="google-site-verification" content="btS2bvsqJOYXPFkyJ9AY6IpmS5egLUhVRIFrTHgK6wI"></meta>
-      <link rel="icon" type="image/x-icon" href="/favicon.jpg"></link>
-    </head>
       <body>
         <script
           type="application/ld+json"
