@@ -5,7 +5,7 @@ import { useState } from 'react';
 const contactCards = [
   { label: 'Email Web Dev', value: 'shashikantshankar707@gmail.com', href: 'mailto:shashikantshankar707@gmail.com', tone: 'accent' },
   { label: 'Email Data', value: 'shashikantds090@gmail.com', href: 'mailto:shashikantds090@gmail.com', tone: 'warm' },
-  { label: 'LinkedIn', value: 'shashikant-giri-7a4549297', href: 'https://www.linkedin.com/in/shashikant-giri-7a4549297', tone: 'accent' },
+  { label: 'LinkedIn', value: 'shashikantshankargiri', href: 'https://www.linkedin.com/in/shashikantshankargiri', tone: 'accent' },
   { label: 'GitHub Web', value: 'Shashikantgiri-web', href: 'https://github.com/Shashikantgiri-web', tone: 'warm' },
   { label: 'GitHub Data', value: 'shashikant-ds636', href: 'https://github.com/shashikant-ds636', tone: 'accent' },
   { label: 'Phone', value: '+91 7873059283', href: 'tel:+917873059283', tone: 'warm' },

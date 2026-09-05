@@ -10,13 +10,13 @@
         "Contack_no":"+91 7873059283",
         "Loction":"Navi Mumbai, Maharashtra, India"
     },
-    "Linkedli":"www.linkedin.com/in/shashikant-giri-7a4549297",
+    "Linkedli":"www.linkedin.com/in/shashikantshankargiri",
     "Github":{
         "WebDev_Github_Link":"https://github.com/Shashikantgiri-web",
         "dataAnalysis_Github_Link":"https://github.com/shashikant-ds636"
     },
     "portfolio":"https://shashikantgiri.netlify.app/",
-    "Info":"Recent B.Sc. Information Technology graduate with hands-on experience in Web Development and Data Analytics. Skilled in designing and developing responsive web applications using React.js, Next.js, Node.js, Express.js, and MongoDB, along with analyzing business data using Python, SQL, Excel, and Power BI. Experienced in building full-stack applications, interactive dashboards, and data-driven solutions that transform raw data into actionable insights. Passionate about combining modern web technologies and analytics to create scalable digital products that solve real-world business challenges. Currently seeking entry-level opportunities in Web Development, Data Analytics, Business Intelligence, and Data-Driven Software Development.",
+    "Info":"I'm a Web Developer and Data Analyst based in Navi Mumbai, graduating in 2026 with a B.Sc. in Information Technology from Chhatrapati Shivaji Maharaj University. Over the past year, I've built 9 live projects — from a crowdfunding platform (GetMyChap) with QR-based payment integration to a Hospital Performance Dashboard analyzing patient satisfaction and operational KPIs using Power BI. What makes me different: I don't just write code — I connect web technology with data insights. Whether it's building a responsive Next.js app with MongoDB/Supabase or designing a Power BI dashboard from raw Excel data, I focus on solutions that drive real decisions. I'm currently pursuing a Data Science with AIML certification (Coder Technologies, 2026) and actively looking for entry-level opportunities in Web Development, Data Analytics, or Full Stack Development.",
     "Mission":"To bridge the gap between technology and data by developing intelligent, scalable, and user-focused digital solutions. My goal is to leverage web development and data analytics to help organizations make informed decisions, improve efficiency, and deliver impactful user experiences.",
     "Career_Objective":"To begin my professional career as a Web Developer or Data Analyst where I can apply my technical, analytical, and problem-solving skills to create innovative solutions while continuously growing as a technology professional.",
     "Professional_Expertise":[
@@ -46,10 +46,13 @@
             "Github desktop",
             "Cursor",
             "Anti gravity",
+            "Claude",
             "Excel",
             "Power Bi",
             "Mongodb compass",
-            "MySQL Workbench"
+            "MySQL Workbench",
+            "Google Colab",
+            "Postman"
         ]
     },
     "WebDev_Skills": {
@@ -81,7 +84,15 @@
             "Postman"
         ],
         "database": [
-            "MongoDB"
+            "MongoDB",
+            "MySQL",
+            "Supabase PostgreSQL"
+        ],
+        "dataVisualization": [
+            "Power BI",
+            "Recharts",
+            "Matplotlib",
+            "Seaborn"
         ],
         "deployCode": [
             "Vercel",
@@ -91,6 +102,62 @@
         ]
     },
     "webDev_projects": [
+        {
+            "name": "Epis",
+            "description":"IBM HR Analytics web application featuring interactive dashboards and data visualization. Cleaned and analyzed the IBM HR dataset, built Power BI dashboards, migrated data to Supabase PostgreSQL via Python, and developed a full-stack web interface to query and display the database.",
+            "liveLink": "https://ibm-projects-theta.vercel.app/",
+            "powerBi-link": "https://app.powerbi.com/links/QHWigh8vC7?ctid=f8bc6c81-1924-459e-b798-daa257ccd83f&pbi_source=linkShare",
+            "techStack":[
+                "HTML",
+                "Next Js",
+                "Tailwind CSS",
+                "Supabase PostgreSQL",
+                "Rest API",
+                "Supabase Auth",
+                "Vercel",
+                "Python",
+                "Power BI",
+                "Pandas"
+            ]
+        },
+        {
+            "name": "Analyst Web App",
+            "description":"Built the front-end and backend integration for a data analysis web app, connecting it to a Supabase PostgreSQL database. Cleaned and analyzed HR datasets, built performance dashboards in Power BI, then used Python to transfer processed data into Supabase for the web app to consume.",
+            "githubLink": "https://github.com/Shashikantgiri-web/Analyst-Web-App",
+            "liveLink": "https://analyst-web-app-ten.vercel.app",
+            "powerBi-link": "https://app.powerbi.com/links/p9oZuOX0OH?ctid=f8bc6c81-1924-459e-b798-daa257ccd83f&pbi_source=linkShare",
+            "techStack":[
+                "HTML",
+                "Next Js",
+                "Tailwind CSS",
+                "Supabase PostgreSQL",
+                "Rest API",
+                "Recharts",
+                "Supabase Auth",
+                "Vercel",
+                "Python",
+                "Power BI",
+                "Data Cleaning",
+                "SQL",
+                "Excel"
+            ]
+        },
+        {
+            "name": "Billing SaaS",
+            "description":"Developed a billing software-as-a-service (SaaS) application that allows users to generate and manage invoices, track payments, and maintain customer records through a responsive web interface. Generated dynamic invoices using Python, implemented user authentication, and integrated a database for secure data storage.",
+            "githubLink": "https://github.com/Shashikantgiri-web/billing-saas",
+            "liveLink": "https://billing-saas-pearl.vercel.app/",
+            "techStack":[
+                "HTML",
+                "Next Js",
+                "Tailwind CSS",
+                "Supabase PostgreSQL",
+                "Python",
+                "Rest API",
+                "Supabase Auth",
+                "Vercel"
+            ]
+        },
         {
             "name": "Getmychap---fund-raising-website",
             "description":"Developed a crowdfunding web platform that enables users to support fundraising campaigns through a modern and responsive interface. Implemented campaign presentation, donation workflows, and mobile-friendly design using modern web technologies.",
@@ -227,15 +294,51 @@
         "Pandas",
         "NumPy",
         "Matplotlib",
+        "Seaborn",
         "MySQL",
+        "Supabase PostgreSQL",
         "Microsoft Excel",
         "Power BI",
+        "Recharts",
         "Data Cleaning",
         "Data Visualization",
         "Dashboard Development",
         "Business Intelligence"
     ],
     "dataAnalysis_projects": [
+        {
+            "name": "Epis",
+            "powerBi-link": "https://app.powerbi.com/links/QHWigh8vC7?ctid=f8bc6c81-1924-459e-b798-daa257ccd83f&pbi_source=linkShare",
+            "liveLink": "https://ibm-projects-theta.vercel.app/",
+            "description":"Cleaned and analyzed the IBM HR dataset and built interactive Power BI dashboards covering attrition, satisfaction, and workforce KPIs. Migrated the processed dataset into Supabase PostgreSQL via Python and paired it with a full-stack web interface to query and display the data.",
+            "TechStack":[
+                "Power BI",
+                "Python",
+                "Pandas",
+                "Data Cleaning",
+                "Data Visualization",
+                "Dashboard Development",
+                "Business Intelligence",
+                "Supabase PostgreSQL"
+            ]
+        },
+        {
+            "name": "Analyst Web App",
+            "powerBi-link": "https://app.powerbi.com/links/p9oZuOX0OH?ctid=f8bc6c81-1924-459e-b798-daa257ccd83f&pbi_source=linkShare",
+            "liveLink": "https://analyst-web-app-ten.vercel.app",
+            "description":"Cleaned and analyzed HR datasets and built performance dashboards in Power BI, then used Python to transfer the processed data into Supabase PostgreSQL for a connected front-end web app to consume and visualize with Recharts.",
+            "TechStack":[
+                "Power BI",
+                "Python",
+                "SQL",
+                "Excel",
+                "Data Cleaning",
+                "Data Visualization",
+                "Dashboard Development",
+                "Business Intelligence",
+                "Supabase PostgreSQL"
+            ]
+        },
         {
             "name": "Hospital performance dashboard",
             "powerBi-link": "https://app.powerbi.com/reportEmbed?reportId=41a95a86-8f2e-4145-b1a2-b69dc4c382ca&autoAuth=true&ctid=f8bc6c81-1924-459e-b798-daa257ccd83f",

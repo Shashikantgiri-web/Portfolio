@@ -25,19 +25,19 @@ const skillCategories = [
     label: 'Database',
     icon: 'ðŸ—„ï¸',
     color: '#4ade80',
-    items: ['MongoDB', 'MySQL', 'MongoDB Compass'],
+    items: ['MongoDB', 'MySQL', 'Supabase PostgreSQL', 'MongoDB Compass'],
   },
   {
     label: 'Data & Analytics',
     icon: 'ðŸ“Š',
     color: '#818cf8',
-    items: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Power BI', 'Excel', 'SQL'],
+    items: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Power BI', 'Recharts', 'Excel', 'SQL'],
   },
   {
     label: 'Tools & Platforms',
     icon: 'ðŸ› ï¸',
     color: '#fb923c',
-    items: ['VS Code', 'Figma', 'Postman', 'GitHub', 'Vercel', 'Netlify', 'Cursor'],
+    items: ['VS Code', 'Figma', 'Postman', 'GitHub', 'Vercel', 'Netlify', 'Cursor', 'Google Colab'],
   },
 ];
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 { label: 'Email (Data)', value: data.Personl_detail.Email.dataAnalysis_email, icon: 'ðŸ“Š' },
                 { label: 'GitHub (Web)', value: 'Shashikantgiri-web', icon: 'ðŸ™', href: data.Github.WebDev_Github_Link },
                 { label: 'GitHub (Data)', value: 'shashikant-ds636', icon: 'ðŸ”¬', href: data.Github.dataAnalysis_Github_Link },
-                { label: 'LinkedIn', value: 'shashikant-giri', icon: 'ðŸ’¼', href: `https://${data.Linkedli}` },
+                { label: 'LinkedIn', value: 'shashikantshankargiri', icon: 'ðŸ’¼', href: `https://${data.Linkedli}` },
               ].map((item) => (
                 <div
                   key={item.label}

@@ -13,6 +13,10 @@ const skills = [
   { name: 'Tailwind', icon: 'TW' },
   { name: 'Figma', icon: 'FG' },
   { name: 'Express.js', icon: 'EX' },
+  { name: 'Supabase', icon: 'SB' },
+  { name: 'MySQL', icon: 'MY' },
+  { name: 'Pandas', icon: 'PD' },
+  { name: 'Postman', icon: 'PM' },
 ];
 
 function SkillPill({ skill }) {
