@@ -1,4 +1,4 @@
-﻿import apiData from '@/public/api.json';
+import apiData from '@/public/api.json';
 import ProjectCard from '@/components/ProjectCard';
 import { createMetadata } from '@/lib/seo';
 

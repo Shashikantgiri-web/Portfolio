@@ -1,4 +1,4 @@
-﻿import apiData from '@/public/api.json';
+import apiData from '@/public/api.json';
 import HeroSection from '@/components/HeroSection';
 import SkillsMarquee from '@/components/SkillsMarquee';
 import FeaturedProjects from '@/components/FeaturedProjects';

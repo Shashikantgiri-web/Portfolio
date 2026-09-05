@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shashikant Giri — Portfolio
 
-## Getting Started
+Live: [shashikantgiri.netlify.app](https://shashikantgiri.netlify.app/)
 
-First, run the development server:
+Personal portfolio for **Shashikant Giri** — Web Developer & Data Analyst based in Navi Mumbai, India. Built with Next.js and Tailwind CSS, it showcases full-stack web development projects and Power BI / data analytics work side by side, with SEO metadata, structured data (JSON-LD), and a contact form wired to email.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- **Dual project tracks** — dedicated `/web` and `/analytics` sections for full-stack apps and Power BI dashboards, each with individual case-study pages (`/web/[slug]`, `/analytics/[slug]`)
+- **Data-driven content** — all copy, skills, and projects are sourced from a single `public/api.json`, so updating content never requires touching component code
+- **Animated UI** — hero section, skills marquee, card-swap showcase, and a hyperspeed loading intro built with Framer Motion / GSAP
+- **SEO-ready** — per-page metadata, Open Graph/Twitter cards, JSON-LD (`Person`, `WebSite`, `Organization`, `BreadcrumbList`), auto-generated `sitemap.xml` and `robots.txt`
+- **Contact form** — serverless API route (`app/api/contact`) sending messages via Nodemailer
+- **Responsive, dark-themed design** with a custom color system and Clash Grotesk / Satoshi type
+
+## 🧱 Tech Stack
+
+| Category | Tools |
+|---|---|
+| Framework | Next.js 16 (App Router, Turbopack) |
+| UI | React 19, Tailwind CSS 4 |
+| Animation | Framer Motion, GSAP |
+| Email | Nodemailer |
+| Deployment | Netlify (`@netlify/plugin-nextjs`) |
+
+## 📂 Project Structure
+
+```
+app/
+  page.js                   # Home
+  about/page.js              # About, skills, education, certifications
+  web/page.js                 # Web dev projects listing
+  web/[slug]/page.js           # Web project case study
+  analytics/page.js           # Data analytics projects listing
+  analytics/[slug]/page.js     # Analytics project case study
+  contact/page.js             # Contact form
+  api/contact/                # Contact form API route
+components/                  # Reusable UI (Hero, Navbar, Footer, ProjectCard, etc.)
+lib/
+  data.js                    # Reads/derives project data from api.json
+  seo.js                     # Metadata + JSON-LD helpers
+public/
+  api.json                   # Single source of truth for all site content
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+# install dependencies
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# run the dev server
+npm run dev
 
-## Learn More
+# open http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Build for production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✏️ Updating Content
 
-## Deploy on Vercel
+All personal info, skills, projects, education, and certifications live in **`public/api.json`**. To add a new project, drop an entry into `webDev_projects` or `dataAnalysis_projects` — a case-study page and sitemap entry are generated automatically from the project `name`. No component code needs to change.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Configured for **Netlify** (see `netlify.toml`) using `@netlify/plugin-nextjs`. Push to the connected branch and Netlify handles the build.
+
+## 📬 Contact
+
+- Web Dev: [shashikantshankar707@gmail.com](mailto:shashikantshankar707@gmail.com)
+- Data Analysis: [shashikantds090@gmail.com](mailto:shashikantds090@gmail.com)
+- LinkedIn: [linkedin.com/in/shashikantshankargiri](https://www.linkedin.com/in/shashikantshankargiri)
+- GitHub (Web Dev): [@Shashikantgiri-web](https://github.com/Shashikantgiri-web)
+- GitHub (Data): [@shashikant-ds636](https://github.com/shashikant-ds636)
+
+---
+
+Built and maintained by Shashikant Giri.
